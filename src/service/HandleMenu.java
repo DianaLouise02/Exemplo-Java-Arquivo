@@ -13,7 +13,7 @@ public class HandleMenu {
 	//Gerenciador
 	GerenciadorDeUsuarios gs = new GerenciadorDeUsuarios();
 	
-	// Construto vazio
+	// Construtor vazio
 	public HandleMenu() {
 		//Toda vez que a classe menu, for instanciada, o nosso arquivo sera verificado
 		gs.verificaECria("usuarios.txt");

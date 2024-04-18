@@ -2,44 +2,46 @@ package sistema;
 
 import java.util.Scanner;
 
-import service.HandleMenu;
 
-public class Sistema {
+import service.HandleMenuProduto;
+
+public class SistemaProduto {
 
 	public static void main(String[] args) {
-		// Criar Scanner para capturar dados 
+		// TODO Auto-generated method stub
+
 		Scanner sc = new Scanner(System.in);
-		HandleMenu hm = new HandleMenu();
+		HandleMenuProduto hmp = new HandleMenuProduto();
 		int opcao = 0;
 		do {
 			// \n
 			System.out.print("1 - Criar \n2 - Editar \n3 - Deletar \n4 - Listar \n9 - Sair\n");
 			
 			// 5 - Listar especifico
-			// Qual id voce deseja visualizar?
+			// Qual id voce deseja vizualizar?
 			// 4
 			// Objeto N4
 			opcao = sc.nextInt();
 			
 			switch (opcao) {
 			case 1: { 
-				hm.criar();
+				hmp.criar();
 				break;
 			}
 			case 2: {
-				hm.editar();
+				hmp.editar();
 				break;
 			}
 			case 3: {
-				hm.deletar();
+				hmp.deletar();
 				break;
 			}
 			case 4: {
-				hm.listar();
+				hmp.listarProduto();
 				break;
 			}
 			case 5: {
-				hm.listUnico();
+				hmp.listUnico();
 				break;
 			}
 			default:
@@ -51,6 +53,16 @@ public class Sistema {
 		while (opcao != 9);
 		sc.close();
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
